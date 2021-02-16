@@ -13,12 +13,18 @@ const reducer = (state = initialState, action) => {
       localStorage.setItem("counter", actualValue);
       return state;
     case "COUNTER/INCREMENT":
-      const oneMore = S.maybe(0)(S.add(1))(
+      const incValue = S.fromMaybe(0)(
+        S.gets(S.is($.Number))(["payload", "amount"])(action)
+      );
+      const more = S.maybe(0)(S.add(incValue))(
         S.get(S.is($.Number))("value")(state)
       );
-      return loop({ ...state, value: oneMore }, Cmd.action(SAVE));
+      return loop({ ...state, value: more }, Cmd.action(SAVE));
     case "COUNTER/DECREMENT":
-      const oneLess = S.maybe(0)(S.add(-1))(
+      const decvalue = S.fromMaybe(0)(
+        S.gets(S.is($.Number))(["payload", "amount"])(action)
+      );
+      const oneLess = S.maybe(0)(S.add(-decvalue))(
         S.get(S.is($.Number))("value")(state)
       );
       return loop({ ...state, value: oneLess }, Cmd.action(SAVE));

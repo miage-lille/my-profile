@@ -40,3 +40,7 @@ You have an exemple in `src/pages/home/index.js`
 To access informations from the current state inside a component, use the hook [useSelector](https://react-redux.js.org/api/hooks#useselector)
 
 You have an exemple in `src/pages/home/index.js`
+
+## Logging
+
+Redux logger is setup in dev. Open your browser console to browse history of actions.
