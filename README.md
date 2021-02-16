@@ -12,7 +12,7 @@ Install project dependencies.
 - `npm run dev`
 
 Runs the project in development mode.  
-You can view your application at `http://localhost:3000`
+You can view your application at `http://localhost:8080`
 
 The page will reload if you make edits.
 
@@ -27,7 +27,7 @@ Your app is ready to be deployed!
 
 Runs the compiled app in production.
 
-You can again view your application at `http://localhost:3000`
+You can again view your application at `http://localhost:8080`
 
  - `npm test` 
 
