@@ -5,7 +5,7 @@
 ### Code Formater
 
 This project include a setup of [prettier](https://prettier.io/), a code formater for Javascript.
-If you are using probably should install the [prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) and activate the "Format on save" option.
+If you are using VSCode, you should install the [prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) and activate the "Format on save" option.
 
 ### Test Frameworks (optional)
 
@@ -20,14 +20,14 @@ If you wanna add some property based tests, you can add and configure [Fast-chec
 Javascript is a dynamically typed language without ADT or immutability (neither have Typescript).
 To make Javascript more safe you could adopt different strategies:
 - Use a statically typed language that compiles to Javascript, like we did with OCaml + Jsoo
-- Use a type checker preprocessor like [Flow](https://flow.org/en/docs/getting-started/) combined with an immutable datastructure library like [immutablejs](https://immutable-js.github.io/immutable-js/docs/#/)
+- Use a type checker preprocessor like _Flow_ combined with an immutable datastructure library like _immutablejs_
 - Use a library that provides good datastructures like [Sanctuary](https://sanctuary.js.org/)
 
 We will follow the last approach during this training cause it is the less invasive one, and so the easiest to start for any project.
 
 Santuary provides:
 - a typechecker: [sanity-def](https://sanctuary.js.org/#section:type-checking)
-- data type like [either](https://sanctuary.js.org/#section:either) (similar to option) or [maybe](https://sanctuary.js.org/#section:maybe) (similar to result)
+- data type like [either](https://sanctuary.js.org/#section:either) _(similar to option)_ or [maybe](https://sanctuary.js.org/#section:maybe) _(_similar to result)_
 
 ## A solution overview
 
