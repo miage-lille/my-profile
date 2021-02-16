@@ -40,6 +40,7 @@ We will use thoose main modules:
     - client.js
     - app/ : _Application logic here_
         - App.css : _App CSS_
+        - App.test.js : _App Tests_
         - index.js : _App component (main component of the application)_
         - action.js : _Redux Actions_
         - reducer.js : _Redux Reducer function and initial state_
@@ -50,11 +51,11 @@ We will use thoose main modules:
             - Home.css : _Home CSS_
         - myPage/ : _sample, each page should follow this template_
             - index.js : _MyPage component_
-            - Home.css : _MyPage CSS_
+            - MyPage.css : _MyPage CSS_
     - components/ : _Reusable components here_
         - simpleComponent/ : _sample, each reusable component should follow this template_
             - index.js : _SimpleComponent component_
-            - myPage.test.js : _SimpleComponent test_
-            - myPage.css : _SimpleComponent CSS_
+            - SimpleComponent.test.js : _SimpleComponent test_
+            - SimpleComponent.css : _SimpleComponent CSS_
 
 Time to read [an introduction to redux](./redux.md)
